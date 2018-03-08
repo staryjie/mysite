@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}blog article{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>{{ article.title }}</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center"><span>{{ article.author.username }}</span><span style="margin-left: 20px">{{ publish }}</span></p>
+        <div>{{ article.body }}</div>
+    </div>
+    <div class="col-xs-6 col-md-4" align="right">
+		<h2>广告</h2>
+		<a href="https://blog.staryjie.com">Django搭建多用户博客系统</a><br />
+		<img width="200px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1520485992118&di=e079051856c3ee272d4a1001cd74d9c7&imgtype=0&src=http%3A%2F%2Fa1.jikexueyuan.com%2Fhome%2F201604%2F20%2F7883%2F5717574c478e6.jpg">
+	</div>
+</div>
+{% endblock %}
